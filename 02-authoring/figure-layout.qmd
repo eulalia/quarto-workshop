@@ -4,13 +4,9 @@ format: html
 
 ## Directory
 
-```{r}
+```{r, echo=FALSE, include=FALSE}
 # returns a tibble of the files
 fs::dir_info(here::here("materials/images"))
-```
-
-
-```{r}
 # returns paths/files
 fs::dir_ls(here::here("materials/images"))
 ```
@@ -20,58 +16,39 @@ fs::dir_ls(here::here("materials/images"))
 
 Basic markdown syntax:
 
-```
-![Boston Terrier](materials/images/boston-terrier.png)
-```
-
-![Boston Terrier](../../images/boston-terrier.png)
+[![Boston Terrier](../materials/images/boston-terrier.png)]{fig-align="left"}
+[![Sleeping Terrier](../materials/images/boston-sleep.png)]{fig-align="right"}
 
 ## Fragments
 
-:::: columns
+
 
 ::: {.column width="50%"}
 
-```
-![Boston terrier](images/boston-terrier.png){fig-align="left"}
-```
-![](images/boston-terrier.png)
-:::
+[![Boston terrier](../materials/images/boston-terrier.png)]{fig-align="left" fig-alt="A photo of a Boston Terrier."}
 
-::: {.column width="50%"}
-
-```
-![](images/boston-terrier.png){fig-align="right" fig-alt="A photo a Boston Terrier."}
-```
-
-![](images/boston-terrier.png){fig-align="right" fig-alt="A photo a Boston Terrier."}
+[![Sleeping terrier](../materials/images/boston-sleep.png)]{fig-align="right" fig-alt="A photo of a Sleeping Terrier."}
 
 :::
 
-::::
-
-## Subfigures
-
-```
-::: {#fig-bostons layout-ncol=2}
-
-![Excited](images/boston-terrier.png){#fig-boston width="250px"}
-
-![Sleeping](images/boston-sleep.png){#fig-sleep width="250px"}
-
-Two states of Howard
-
-:::
-```
 
 ## Subfigures
 
 ::: {#fig-bostons layout-ncol=2}
 
-![Excited](images/boston-terrier.png){#fig-boston width="250px"}
+[![Excited](../materials/images/boston-terrier.png)]{#fig-boston width="50px"}
 
-![Sleeping](images/boston-sleep.png){#fig-sleep width="250px"}
+[![Sleeping](../materials/images/boston-sleep.png)]{#fig-sleep width="50px"}
 
 Two states of Howard
-
 :::
+
+::: {#fig-bostons layout-ncol=2}
+
+[![Still excited](../materials/images/boston-terrier.png)]{#fig-boston width="50px"}
+
+[![Still sleeping](../materials/images/boston-sleep.png)]{#fig-sleep width="50px"}
+
+Two states of Howard, twice
+:::
+

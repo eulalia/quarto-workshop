@@ -4,7 +4,6 @@ format:
     toc: true
 title: Markdown syntax Tut
 author: ecg
-
 ---
 
 https://rstudio-conf-2022.github.io/get-started-quarto/materials/02-authoring.html#/our-turn-1
@@ -23,20 +22,39 @@ added
 
 #### Table
 
-| Restaurant | Cuisine  |
-|-----------:|---------:|
-| ToutBon    | Belgian  |
-| LaPasta    | Italian  |
-| Paella     | Spanish  |
+| Restaurant | Cuisine |
+|-----------:|--------:|
+|    ToutBon | Belgian |
+|    LaPasta | Italian |
+|     Paella | Spanish |
 
 #### Image link
 
-  [Web image](https://appletoolbox.com/wp-content/uploads/2015/09/icloud-drive-800_thumb800-540x304.jpg)
+[Web image](https://appletoolbox.com/wp-content/uploads/2015/09/icloud-drive-800_thumb800-540x304.jpg)
+
+![Local image](Ault-2022_800k.jpg)
+
+-   To dos
+    -   finish section 2. authoring of the 2022 RStudio conference Quarto workshop (starting in slide 25)
+    -   try ep elections analysis using rhighlighter maps with Quarto and htmlwidgets
+
+1.  Use any markdown syntax that you can recall from the slides or refresh your memory from <https://quarto.org/docs/authoring/markdown-basics.html>
+
+
+::: {.border style="style"}
+This content can be styled with a border
+:::
+
+::: {.[text]{.class} style="[special] {style}"
+This is text with [special] {style="color.red;"} formatting.
+:::
   
-  ![Local image](Ault-2022_800k.jpg)
+:::{.unnumbered .unlisted}
+Text
+:::
+<div style ="font-size: 200px;">Text</div>
 
-* To dos
-    + finish section 2. authoring of the 2022 RStudio conference Quarto workshop (starting in slide 25)
-    + try ep elections analysis using rhighlighter maps with Quarto and htmlwidgets
-
-1. Use any markdown syntax that you can recall from the slides or refresh your memory from <https://quarto.org/docs/authoring/markdown-basics.html>
+:::{.callout-note}
+Note that there are five types of callouts, including:
+`note`, `tip`, `warning`, `caution`, and `important`
+:::
