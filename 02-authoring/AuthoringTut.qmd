@@ -29,7 +29,19 @@ The `echo: false` option disables the printing of code (only output is displayed
 
 pdf rendering from the Terminal fails though it succeeds when running if from the Console with 
 
-```{md renderpdf}
-echo: false
-quarto::quarto_render("AuthoringTut.qmd", output_format = "pdf")
+```{r renderpdf}
+#| echo: false
+#is this making some kind of a recursive call
+quarto_render("AuthoringTut.qmd", output_format = "pdf")
 ```
+```{r fenced code}
+#| echo: fenced
+1 + 1
+```
+````
+```{{r not executed}}
+1+1
+```
+````
+
+
