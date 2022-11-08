@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="ecg">
 
-<title>Markdown syntax Tut</title>
+<title>callout-boxes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,124 +23,45 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="MarkdownSyntaxTut_files/libs/clipboard/clipboard.min.js"></script>
-<script src="MarkdownSyntaxTut_files/libs/quarto-html/quarto.js"></script>
-<script src="MarkdownSyntaxTut_files/libs/quarto-html/popper.min.js"></script>
-<script src="MarkdownSyntaxTut_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="MarkdownSyntaxTut_files/libs/quarto-html/anchor.min.js"></script>
-<link href="MarkdownSyntaxTut_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="MarkdownSyntaxTut_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="MarkdownSyntaxTut_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="MarkdownSyntaxTut_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="MarkdownSyntaxTut_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="callout-boxes_files/libs/clipboard/clipboard.min.js"></script>
+<script src="callout-boxes_files/libs/quarto-html/quarto.js"></script>
+<script src="callout-boxes_files/libs/quarto-html/popper.min.js"></script>
+<script src="callout-boxes_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="callout-boxes_files/libs/quarto-html/anchor.min.js"></script>
+<link href="callout-boxes_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="callout-boxes_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="callout-boxes_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="callout-boxes_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="callout-boxes_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
 
-<body>
+<body class="fullcontent">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#change-yaml-header-section" id="toc-change-yaml-header-section" class="nav-link active" data-scroll-target="#change-yaml-header-section">Change YAML header section</a></li>
-  <li><a href="#second-level-2-section" id="toc-second-level-2-section" class="nav-link" data-scroll-target="#second-level-2-section">Second level 2 section</a>
-  <ul class="collapse">
-  <li><a href="#second-level-2-section---subsection-level-3" id="toc-second-level-2-section---subsection-level-3" class="nav-link" data-scroll-target="#second-level-2-section---subsection-level-3">Second level 2 section - Subsection level 3</a></li>
-  </ul></li>
-  </ul>
-</nav>
-</div>
+
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Markdown syntax Tut</h1>
-</div>
 
 
+<section id="callout-markdown-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="callout-markdown-syntax">Callout markdown syntax</h2>
+<pre><code>:::{.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
 
-<div class="quarto-title-meta">
+:::{.callout-tip}
+## Tip With Caption
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>ecg </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
+This is an example of a callout with a caption.
+:::</code></pre>
+<pre><code>:::{.callout-caution collapse="false"}
+## Expand To Learn About Collapse
 
-</header>
-
-<p>https://rstudio-conf-2022.github.io/get-started-quarto/materials/02-authoring.html#/our-turn-1</p>
-<section id="change-yaml-header-section" class="level2">
-<h2 class="anchored" data-anchor-id="change-yaml-header-section">Change YAML header section</h2>
-<p>done</p>
-</section>
-<section id="second-level-2-section" class="level2">
-<h2 class="anchored" data-anchor-id="second-level-2-section">Second level 2 section</h2>
-<p>added</p>
-<section id="second-level-2-section---subsection-level-3" class="level3">
-<h3 class="anchored" data-anchor-id="second-level-2-section---subsection-level-3">Second level 2 section - Subsection level 3</h3>
-<p>added</p>
-<section id="table" class="level4">
-<h4 class="anchored" data-anchor-id="table">Table</h4>
-<table class="table">
-<thead>
-<tr class="header">
-<th style="text-align: right;">Restaurant</th>
-<th style="text-align: right;">Cuisine</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">ToutBon</td>
-<td style="text-align: right;">Belgian</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">LaPasta</td>
-<td style="text-align: right;">Italian</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">Paella</td>
-<td style="text-align: right;">Spanish</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="image-link" class="level4">
-<h4 class="anchored" data-anchor-id="image-link">Image link</h4>
-<p><a href="https://appletoolbox.com/wp-content/uploads/2015/09/icloud-drive-800_thumb800-540x304.jpg">Web image</a></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Ault-2022_800k.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Local image</figcaption><p></p>
-</figure>
-</div>
-<ul>
-<li>To dos
-<ul>
-<li>finish section 2. authoring of the 2022 RStudio conference Quarto workshop (starting in slide 25)</li>
-<li>try ep elections analysis using rhighlighter maps with Quarto and htmlwidgets</li>
-</ul></li>
-</ul>
-<ol type="1">
-<li>Use any markdown syntax that you can recall from the slides or refresh your memory from <a href="https://quarto.org/docs/authoring/markdown-basics.html" class="uri">https://quarto.org/docs/authoring/markdown-basics.html</a></li>
-</ol>
-<div class="border">
-<p>This content can be styled with a border</p>
-</div>
-<div class="[text]{.class}">
-<p>This is text with [special] {style=“color.red;”} formatting.</p>
-</div>
-</section>
-</section>
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::</code></pre>
 </section>
 
 </main>
